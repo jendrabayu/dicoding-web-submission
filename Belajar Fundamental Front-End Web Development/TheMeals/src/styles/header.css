@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.jumbotron{
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: rgb(236,117,51);
+}
+
+.jumbotron h1{
+    letter-spacing: .3rem;
+    color: rgb(57,57,59);
+    font-family: 'Lobster', cursive;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+.jumbotron p.lead{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(236,117,51);
+}
+.navbar-brand{
+    color: rgb(57,57,59);
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.navbar-brand::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(57,57,59);
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.search-bar input{
+    position: relative;
+    padding: 17px 25px;
+    font-size: 18px;
+    border-radius: 25px !important;
+    outline-color:  rgb(57,57,59) ;
+ 
+}
+
+.search-bar .input-group-append{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    z-index: 5;
+}
+
+@media (max-width: 768px){
+    .jumbotron{
+        padding: 70px 100px;
+    }
+}
+
+@media (max-width: 375px){
+    .navbar-brand{
+        font-size: 25px;
+    }
+
+    .jumbotron{
+        padding: 50px 20px;
+    }
+    .jumbotron h1{
+       font-size: 30px;
+    }
+
+    .jumbotron p.lead{
+        font-size: 13px;
+        
+    }
+
+    .search-wrapper{
+        margin-top: 20px !important;
+    }
+
+    .search-bar input{
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+    .search-bar .input-group-append{
+        top: 8px;
+        right: 15px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+    
+}
+
+

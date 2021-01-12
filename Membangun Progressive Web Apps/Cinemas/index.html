@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="/icon/logo192.png">
+    <title>Cinemas</title>
+    <link rel="shortcut icon" href="icon/logo144.png">
+    <link rel="stylesheet" href="vendor/materialize/materialize.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/animatecss/animate.min.css">
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Pacifico&family=Roboto&display=swap" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000"/>
+</head>
+
+<body>
+
+    <div class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <header >  
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">Cinemas</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars white-text"></i></a>
+                    <ul class="right hide-on-med-and-down topnav">
+                      <li><a class="active-nav" href="#home">Home</a></li>
+                      <li><a href="#indonesia">Indonesia</a></li>
+                      <li><a href="#mancanegara">Mancanegara</a></li>
+                      <li><a href="#bioskop">Bioskop</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav> 
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#indonesia">Indonesia</a></li>
+            <li><a href="#mancanegara">Mancanegara</a></li>
+            <li><a href="#bioskop">Bioskop</a></li>
+          </ul>
+    </header>
+
+    <main class="container">
+    </main>
+    
+    <footer class="page-footer black py-3">
+        <div class="footer-copyright page-footer">
+          <div class="container center-align">
+            Copyright © 2020 JeNdRa. All Rights Reserved
+          </div>
+        </div>
+    </footer>
+
+  <div id="modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <!-- content here -->
+    </div>
+    <div class="modal-footer">
+      <button class="modal-close btn-flat red darken-2 white-text">Tutup</button>
+    </div>
+  </div>
+          
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/materialize/materialize.min.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/data/DataSource.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('servicesWorker.js')
+        .then(() => console.log('Pendaftaran ServiceWorker berhasil'))
+        .catch(() => console.log('Pendaftaran ServiceWorker gagal'))
+      })
+    } else {
+      console.log("ServiceWorker belum didukung browser ini.")
+    }
+  </script>
+</body>
+</html>
